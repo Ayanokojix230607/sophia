@@ -1,7 +1,7 @@
 FROM quay.io/ayanokojix2306/kojixsophia
-RUN git clone https://github.com/A-Y-A-N-O-K-O-J-I/SOPHIA-MD /sophia
-RUN chmod -R node:node /sophia
+RUN git clone https://github.com/A-Y-A-N-O-K-O-J-I/SOPHIA-MD /sophie
+RUN chmod -R node:node /sophie
 USER node
-WORKDIR /sophia
+WORKDIR /sophie
 RUN npm install
 CMD ["npm","start"]
